@@ -1,0 +1,14 @@
+{
+"reporters": [
+	"default",
+	["./node_modules/jest-html-reporter", {
+		"pageTitle": "Testing with Jest beginner",
+        "JEST_HTML_REPORTER_INCLUDE_FAILURE_MSG": true,
+        "JEST_HTML_REPORTER_INCLUDE_CONSOLE_LOG":true,
+        "JEST_HTML_REPORTER_DATE_FORMAT":true
+        
+
+
+	}]
+]
+}
