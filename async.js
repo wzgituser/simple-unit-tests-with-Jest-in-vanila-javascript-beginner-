@@ -6,4 +6,4 @@ const request = await axios.get(`https://dummyjson.com/products/${id}`)
     // console.log(request)
     return request
 }
-fetchData(1)
+

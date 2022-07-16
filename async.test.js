@@ -2,12 +2,12 @@ import { fetchData } from "./async";
 
 test('shoul return correct todo id no.',()=>{
     fetchData(1).then((data) =>{
-        expect(data.id).toBe(1)  
+        expect(data.id).toMatch('1')  
     })  
 })
-test('value data.title is eql title.value',()=>{
+test('value data.title is eql ...',()=>{
     fetchData(1).then(data =>{
-        expect(data.title).toEqual('iPhone 9')
+        expect(data.title).toMatch('iPhone 9')
     })  
 })
 ///async///await///?////?////?///
