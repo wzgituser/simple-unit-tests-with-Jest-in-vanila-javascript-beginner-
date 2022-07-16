@@ -1,15 +1,19 @@
 import { fetchData } from "./async";
 
-test('shoul return correct todo',()=>{
-    fetchData(1).then(todo =>{
-        expect(todo.id).toBe(1)
-        expect(todo.userId).toBe(1)
-        
-    })
-    
+test('shoul return correct todo id no.',()=>{
+    fetchData(1).then((data) =>{
+        expect(data.id).toBe(1)  
+    })  
 })
-test('value data.complited is falsy',()=>{
-    fetchData(2).then(todo =>{
-        expect(todo.complited).toBeFalsy
-    })
+test('value data.title is eql title.value',()=>{
+    fetchData(1).then(data =>{
+        expect(data.title).toEqual('iPhone 9')
+    })  
 })
+///async///await///?////?////?///
+test('assertion of the userId value', async ()=>{
+    const req = await fetchData(1)
+    expect(req.images).toBeDefine
+    })
+
+
